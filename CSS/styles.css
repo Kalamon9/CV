@@ -21,6 +21,11 @@ p {
   line-height: 2;
 }
 
+td {
+display: table-cell;
+vertical-align: text-top;
+}
+
 a {
   color: #30475e;
   text-decoration: none;
