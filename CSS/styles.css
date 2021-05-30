@@ -1,8 +1,11 @@
 body {
-  background-color: #EAF6F6;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   text-align: center;
+}
+td {
+display: table-cell;
+vertical-align: text-top;
 }
 
 h1 {
@@ -12,18 +15,8 @@ h1 {
   font-weight: normal;
 }
 
-h2, h3 {
-  font-family: 'Hind Siliguri', sans-serif;
-  font-weight: normal;
-}
-
 p {
   line-height: 2;
-}
-
-td {
-display: table-cell;
-vertical-align: text-top;
 }
 
 a {
@@ -32,7 +25,7 @@ a {
 }
 
 a:hover {
-color: #EAF6F6;  
+color: #EAF6F6;
 }
 
 hr {
@@ -44,13 +37,12 @@ hr {
 
 .top-container {
   background-color: #EAF6F6;
-  position: relative;
   padding: 50px 30px 0;
   color: #30475e;
 }
 
 .top-profile-container {
-  background-color: #d1e0e0;
+  background-color: white;
   color: #30475e;
   padding: 50px 0;
 }
@@ -59,11 +51,12 @@ hr {
   background-color: #30475e;
   color: #dddddd;
   padding: 50px 0;
+  font-size: 1rem;
 }
 
 .bottom-container {
-  background-color: #214151;
-  color: #EAF6F6;
+  background-color: white;
+  color: #30475e;
   padding: 50px 0 10px;
 }
 
@@ -81,21 +74,17 @@ hr {
 
 .intro {
   margin: 0 auto;
-  width: 50%;
-}
+  }
+
 .table {
   text-align: justify;
   margin: 0 auto;
-  width: 60%;
   table-layout: fixed;
-
 }
 
 .skill-row {
-
   text-align: left;
   margin: 30px auto;
-  width: 50%;
 }
 
 .computer {
@@ -113,12 +102,14 @@ hr {
 
 
 .contact-me {
-  color: #a3d2ca;
+  color: #30475e;
+  font-size: 1.5rem;
+
 }
 
 .footer-link {
   text-decoration: none;
-  color: #a3d2ca;
+  color: #536162;
   font-family: 'Montserrat', sans-serif;
   margin: 50px 20px 10px;
 }
@@ -127,22 +118,17 @@ hr {
 }
 
 .p-contact {
-  width: 40%;
   margin: 40px auto 20px;
   }
 
 .btn {
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   border-radius: 10px;
-   color: #FFFFFF;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 15px;
+   border-radius: 50px;
+   color: #30475e;
+   font-size: 20px;
    font-weight: 100;
-   padding: 10px;
-   background-color: #F05454;
-   text-shadow: 1px 1px 20px #000000;
-   border: solid #F05454 1px;
+   padding: 25px 35px;
+   background-color: white;
+   border: solid #30475e 2px;
    text-decoration: none;
    display: inline-block;
    cursor: pointer;
@@ -151,20 +137,34 @@ hr {
 }
 
 .btn:hover {
-   border: solid #F05454 1px;
-   background: #F05454;
-   background-image: -webkit-linear-gradient(top, #F05454, #DB9A9A);
-   background-image: -moz-linear-gradient(top, #F05454, #DB9A9A);
-   background-image: -ms-linear-gradient(top, #F05454, #DB9A9A);
-   background-image: -o-linear-gradient(top, #F05454, #DB9A9A);
-   background-image: -webkit-gradient(to bottom, #F05454, #DB9A9A);
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   border-radius: 10px;
-   text-decoration: none;
-}
+   border: solid #30475e 1px;
+   background: #30475e;
+   }
 
 .copyrights {
   font-size: 0.75rem;
   margin-top: 30px;
+  color: #536162;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
 }
