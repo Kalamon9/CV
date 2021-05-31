@@ -181,4 +181,7 @@ hr {
         margin: 6px 3px;
         text-align: left;
       }
+  .bottom-cloud {
+        display: none;
+      }
 }
